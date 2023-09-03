@@ -1,4 +1,4 @@
-namespace MvpExample
+namespace MVP
 {
     public class Presenter
     {

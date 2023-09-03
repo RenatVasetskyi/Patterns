@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MvpExample
+namespace MVP
 {
     public class Model
     {
