@@ -28,8 +28,8 @@ namespace Memento
                 int index1 = storage1.GetItemIndex(_uiSlotToSwap);
                 Item item1 = storage1.GetItem(index1);
                 
-                MementoStorage storage2 = _uiSlotToSwap.GetStorage();
-                int index2 = storage2.GetItemIndex(_uiSlotToSwap);
+                MementoStorage storage2 = targetSlot.GetStorage();
+                int index2 = storage2.GetItemIndex(targetSlot);
                 Item item2 = storage2.GetItem(index2);
 
                 if (!storage1._isStatic)
@@ -41,7 +41,7 @@ namespace Memento
                 if (!storage2._isStatic)
                 {
                     storage2.SetItemInSlot(index2, item1);
-                    _uiSlotToSwap.UpdateUI(item1);
+                    targetSlot.UpdateUI(item1);
                 }
                 
                 ClearSwap();
