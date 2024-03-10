@@ -7,8 +7,8 @@ namespace Memento
     {
         [SerializeField] private bool _isStatic;
         
-        [SerializeField] private List<UISlot> _uiSlots;
-        [SerializeField] private List<Item> _items;
+        [SerializeField] protected List<UISlot> _uiSlots;
+        [SerializeField] protected List<Item> _items;
 
         private UISlot _uiSlotToSwap;
 
