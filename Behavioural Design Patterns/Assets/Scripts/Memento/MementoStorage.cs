@@ -20,7 +20,7 @@ namespace Memento
             }
             else if (_uiSlotToSwap == targetSlot)
             {
-                _uiSlotToSwap = null;
+                ClearSwap();
             }
             else
             {
